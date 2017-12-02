@@ -12,6 +12,7 @@ export class MenuAulaPage {
   tipoUser:string;
   usuario:string;
   usuarioIngresado:string;
+  aula: string;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   
     this.usuarioIngresado = navParams.get("usuario");
@@ -23,19 +24,17 @@ export class MenuAulaPage {
     console.log('ionViewDidLoad MenuAulaPage');
   }
 
-  EntrarChat()
+  EntrarChat(aula)
   {
 
-    if(this.tipoUser=="4A")
+    if(this.aula=="4A")
       {
         this.navCtrl.push(ChatPage,{curso:"A",usuario:this.usuario});
       }
-    else if(this.tipoUser=="4B")
+    else if(this.aula=="4B")
       {
         this.navCtrl.push(ChatPage,{curso:"B",usuario:this.usuario});
       }
-      else
-        {alert("debe seleccionar un aula");}
   }
 
   UsuarioIngresado()

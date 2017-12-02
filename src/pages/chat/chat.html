@@ -1,7 +1,7 @@
 <ion-content>
   <ion-list>
-      <ion-item *ngFor="let item of list | async">
-       {{item.usuario}} dice:
+      <ion-item [ngClass]="{'derecha': item.usuario == email, 'izquierda': item.usuario != email}" *ngFor="let item of list | async">
+       <p [hidden]="item.usuario == email">{{item.usuario}} dice:</p>
         {{item.mensaje}}
       </ion-item>
     </ion-list>
@@ -17,12 +17,12 @@
     <td>
       <div >
     
-        <input id="msg"  [(ngModel)]="chatBox" type="text" class="form-control" name="msg" placeholder="Escriba su mensaje aqui...">
+        <input id="msg"  [(ngModel)]="chatBox" type="text" class="form-control" name="msg" placeholder="Escribir mensaje">
       </div>
     </td>
     <td>
       <!-- <button ion-button  icon-right outline (click)="Push()">Enviar<ion-icon name="ios-send"></ion-icon></button> -->
-      <input type="submit" (click)="Push()"  value="Envia">
+      <input type="submit" (click)="Push()"  value="Enviar">
     </td>
   </tr>
 </table>

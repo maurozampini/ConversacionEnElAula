@@ -22,12 +22,12 @@ import { ChatPage } from '../pages/chat/chat';
 import { Vibration } from '@ionic-native/vibration';
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyCMbDLJQepOWSgA6h9mJLjdwDwO4oGBtiU",
-  authDomain: "appchat-a682a.firebaseapp.com",
-  databaseURL: "https://appchat-a682a.firebaseio.com",
-  projectId: "appchat-a682a",
-  storageBucket: "appchat-a682a.appspot.com",
-  messagingSenderId: "488232159152"
+  apiKey: "AIzaSyChdnIEsytQLpkrv2U_wpTXqdvOqSpb6SA",
+  authDomain: "conversandoenelaula-mauro.firebaseapp.com",
+  databaseURL: "https://conversandoenelaula-mauro.firebaseio.com",
+  projectId: "conversandoenelaula-mauro",
+  storageBucket: "conversandoenelaula-mauro.appspot.com",
+  messagingSenderId: "463229150514"
 };
 
 @NgModule({
