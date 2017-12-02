@@ -1,0 +1,31 @@
+<ion-content>
+  <ion-list>
+      <ion-item *ngFor="let item of list | async">
+       {{item.usuario}} dice:
+        {{item.mensaje}}
+      </ion-item>
+    </ion-list>
+</ion-content>
+<ion-footer>
+<ion-toolbar>
+  <!-- <ion-title>Su Mensaje</ion-title> -->
+  <!-- <ion-input [(ngModel)]="chatBox" type="text" aria-placeholder="Escriba su mensaje aqui..." value=""></ion-input> -->
+<!-- </div> -->
+
+<table border="0">
+  <tr>
+    <td>
+      <div >
+    
+        <input id="msg"  [(ngModel)]="chatBox" type="text" class="form-control" name="msg" placeholder="Escriba su mensaje aqui...">
+      </div>
+    </td>
+    <td>
+      <!-- <button ion-button  icon-right outline (click)="Push()">Enviar<ion-icon name="ios-send"></ion-icon></button> -->
+      <input type="submit" (click)="Push()"  value="Envia">
+    </td>
+  </tr>
+</table>
+
+</ion-toolbar>
+</ion-footer>

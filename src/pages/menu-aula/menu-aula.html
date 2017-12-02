@@ -1,0 +1,25 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>MenuAula</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding align="center">
+
+  <ion-list align="center">
+    <ion-item class="miselect">
+      <ion-label >AULA</ion-label>
+      <ion-select [(ngModel)]="tipoUser">
+        <ion-option value="4A">4A</ion-option>
+        <ion-option value="4B">4B</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <input  type="submit" (click)="EntrarChat()"  value="Entrar">
+
+</ion-content>
